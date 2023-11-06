@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+  .container-set{
+    @apply bg-[#1C1C22] w-full font-[poppins]  px-[10%]
+  } 
+
+  .links-navbar{
+    @apply flex items-center gap-2 
+  }
+
+  .links-hover{
+    @apply hover:bg-gradient-to-r hover:from-pink-500 hover:to-yellow-500 hover:bg-clip-text hover:text-transparent
+  }
+
+  .navbar-links-sm{
+    @apply w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 py-2 mb-3 cursor-pointer hover:scale-110 ease-in duration-150
+  }
+
+  .nav-link-xl{
+    @apply bg-gradient-to-r from-pink-500  to-yellow-500 p-3 rounded-full mb-3 hover:scale-105 ease-in duration-150
+  }
+
+  .title{
+    @apply text-2xl xl:text-3xl font-bold bg-gradient-to-r from-pink-500  to-yellow-500  bg-clip-text text-transparent
+  }
+
+  .edu-name{
+    @apply text-lg font-semibold text-white
+  }
+
+  .edu-major{
+    @apply flex justify-between pr-20 text-sm text-[#aaaaaa] mt-1
+  }
+
+  .portfolio-card{
+    @apply mb-6 border-2 w-full border-white rounded-md p-3 shadow-inner sm:w-64  xl:mb-0;
+  }
+
+  .flex-skill{
+    @apply flex  items-center bg-slate-700 rounded-lg px-3
+  }
+
+  .project-card{
+    @apply xl:w-[45%] border-[#aaaaaa] border-2 p-2
+  }
+
+  .label-form-contact{
+    @apply block text-white text-sm mb-3
+  }
+
+}
